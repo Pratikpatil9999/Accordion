@@ -1,14 +1,16 @@
 import React from 'react';
+import questions from './data'
 const Questions = () => {
     return (
         <div>
-          <h1>what is yppu name? and address ahd</h1>  
-          <h1>what is yppu name? and address ahd</h1>  
-          <h1>what is yppu name? and address ahd</h1>  
-          <h1>what is yppu name? and address ahd</h1>  
-          <h1>what is yppu name? and address ahd</h1>  
-          <h1>what is yppu name? and address ahd</h1>  
-          <h1>what is yppu name? and address ahd</h1>  
+            <ul>
+          {questions.map(question=>(
+                  <li style={{listStyle:'none'}}>
+                      <h2>{question.title} </h2>
+
+                  </li>
+    ))}
+          </ul>
         </div>
       );
 }
