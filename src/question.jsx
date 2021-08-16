@@ -1,18 +1,11 @@
 import React from 'react';
-import questions from './data'
-const Questions = () => {
+import { AiOutlineMinus,AiOutlinePlus } from "react-icons/ai";
+const Question = ({info,title}) => {
     return (
-        <div>
-            <ul>
-          {questions.map(question=>(
-                  <li style={{listStyle:'none'}}>
-                      <h2>{question.title} </h2>
-
-                  </li>
-    ))}
-          </ul>
-        </div>
+        <article>
+             <h2>{title}</h2>
+        </article>
       );
 }
  
-export default Questions;
+export default Question;

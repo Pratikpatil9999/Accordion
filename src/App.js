@@ -1,13 +1,18 @@
 import './App.css';
-import Questions from './question'
+import Question from './question'
+import questions from './data'
+
 function App() {
   return (
     <div className="App">
         <div className="question">
           <h1>Questions and Answers About login</h1> 
         </div>
-       
-           <Questions/>
+           <section>
+             {questions.map((question) =>{
+               return <Question key={question.id} info={question.info} title={question.title}></Question>
+             })}
+           </section>
       
     </div>
   );
