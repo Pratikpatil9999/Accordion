@@ -5,7 +5,7 @@ import questions from './data'
 function App() {
   return (
     <div className="App">
-        <div className="question">
+        <div className="questions">
           <h1>Questions and Answers About login</h1> 
         </div>
            <section>
